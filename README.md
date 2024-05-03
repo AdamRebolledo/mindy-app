@@ -1,35 +1,17 @@
-# Next.js + Jest
+# Next.js - Mindy App
 
-This example shows how to configure Jest to work with Next.js.
+## Valor agregago
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript. This example also shows how to use Jest with the App Router and React Server Components.
+Uso de NextJs con la finalidad de mostrar un conocimiento sobre las nuevas características del framework basado en React.
 
-> **Note:** Since tests can be co-located alongside other files inside the App Router, we have placed those tests in `app/` to demonstrate this behavior (which is different than `pages/`). You can still place all tests in `__tests__` if you prefer.
+Utilización del código JSON que no era parte del desafío, para mostrar conocimientos de test unitarios básicos, además se aprovecha este elemento de la interfaz para hacer pequeñas interacciones en Mobile, con el fin de añadir algo de valor agregado.
 
-## Deploy your own
+Se realiza deploy a Vercel para facilitar la entrega y revisión [https://mindy-app.vercel.app/](https://mindy-app.vercel.app/).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-jest&project-name=with-jest&repository-name=with-jest)
+Pequeño ajuste de la vista en Mobile
 
-## How to Use
+## Información Importante
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
-
-In your terminal, run the following command:
-
-```bash
-npx create-next-app --example with-jest with-jest-app
-```
-
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
-
-```bash
-pnpm create next-app --example with-jest with-jest-app
-```
-
-## Running Tests
-
-```bash
-npm test
-```
+Nota: Para correr el código local, usar node 20.11.1 o superior, para usar NextJs-14
+Repositorio: [https://github.com/AdamRebolledo/mindy-app](https://github.com/AdamRebolledo/mindy-app) 
+Más Información: [https://docs.google.com/document/d/10EZrw1YHO3vC_s_LGQtRftEwcDVXUyI21ORf3VoApjE/edit?usp=sharing](https://docs.google.com/document/d/10EZrw1YHO3vC_s_LGQtRftEwcDVXUyI21ORf3VoApjE/edit?usp=sharing) 
