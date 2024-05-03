@@ -1,3 +1,4 @@
+"use client";
 import React, { FC } from "react";
 import { UseFormReturn } from "react-hook-form";
 import Plot from "react-plotly.js";
