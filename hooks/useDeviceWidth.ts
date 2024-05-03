@@ -6,6 +6,10 @@ export const useDeviceWidth = () => {
   const [currentWidth, setCurrentWidth] = useState<TCurrentWidth>('');
 
   useEffect(() => {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
     const mediaQueryListeners = {
       mobile: window.matchMedia('(max-width:640px)'),
       tablet: window.matchMedia('(min-width:641px) and (max-width:1023px)'),
@@ -29,13 +33,12 @@ export const useDeviceWidth = () => {
     const handler = () => deviceWidth();
     Object.values(mediaQueryListeners).forEach(mql => mql.addEventListener('change', handler));
 
-    // Cleanup
     return () => {
       Object.values(mediaQueryListeners).forEach(mql => mql.removeEventListener('change', handler));
     };
   }, []);
 
   return currentWidth;
-}
+};
 
 export default useDeviceWidth;

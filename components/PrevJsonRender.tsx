@@ -1,3 +1,4 @@
+"use client";
 import React, { FC, useState } from "react";
 import { IMindyResponse } from "types/MindyType";
 
