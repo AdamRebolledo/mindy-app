@@ -1,4 +1,4 @@
-import TestComponent from "@/components/TestComponent";
+import FormFilterGraph from "@/components/FormFilterGraph";
 
 export const metadata = {
  title: "Mindy App",
@@ -7,8 +7,7 @@ export const metadata = {
 export default function Page() {
  return (
   <div>
-   <h1>App Router</h1>
-   <TestComponent />
+   <FormFilterGraph />
   </div>
  );
 }
