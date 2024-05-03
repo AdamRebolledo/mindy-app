@@ -32,7 +32,7 @@ const PlotGraph: FC<TPlotGraph> = (props) => {
   x: item.x.format(props.form.getValues("month") ? "DD MMM" : "MMM YYYY"),
   y: item.y,
  }));
-
+ if (!traceData.length) return <p>No se encontraron datos para el período especificado.</p>;
  return (
   <Plot
    data={[

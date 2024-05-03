@@ -23,7 +23,11 @@ const FormFilterGraph = () => {
 
  const aniosOptions = generateRange(indicatorInput);
 
- const { data: mindyQuery, isLoading } = useMindyQuery({
+ const {
+  data: mindyQuery,
+  isLoading,
+  isError,
+ } = useMindyQuery({
   indicator: indicatorInput,
   anio: Number(anioInput),
   reactQueryOptions: { enabled },
@@ -36,6 +40,7 @@ const FormFilterGraph = () => {
 
  return (
   <>
+   {isError && <p>Ups... ocurrió un error</p>}
    {isLoading && <LoadingOverlay />}
    <div className='grid grid-cols-12 gap-4 pt-10 pb-12 px-8'>
     <div className='col-span-12 md:col-span-4'>
