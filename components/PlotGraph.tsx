@@ -1,10 +1,10 @@
-"use client";
 import React, { FC } from "react";
 import { UseFormReturn } from "react-hook-form";
-import Plot from "react-plotly.js";
+const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 import { IMindyResponse } from "types/MindyType";
 import { TFormFilterGraph, getMonthLabelByValue } from "utils/forms/FormFilterGraph";
 import dayjs from "dayjs";
+import dynamic from "next/dynamic";
 
 type TPlotGraph = {
  data: IMindyResponse;
